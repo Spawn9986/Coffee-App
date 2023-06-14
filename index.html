@@ -8,36 +8,45 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="styles_flex.css" />
     <title>Coffee Masters</title>
   </head>
   <body>
-    <header>Coffee Masters</header>
+    <header class="header-container">
+      <img
+        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+        alt="coffee mug"
+        width="30"
+        height="30"
+      />
+      <p>Coffee Masters</p>
+    </header>
     <div class="main-app-container">
       <div class="items-container">
-        <p>ITEMS</p>
+        <p class="orange-text">ITEMS</p>
         <div class="items-container-top">
           <p>1x Cappuccino $3.35</p>
-          <p>Lite foam</p>
+          <p class="orange-text">Lite foam</p>
         </div>
         <div class="items-container-middle">
           <p>1x Cappuccino $3.85</p>
-          <p>Lite milk</p>
-          <p>Double expresso</p>
+          <p class="orange-text">Lite milk</p>
+          <p class="orange-text">Double expresso</p>
         </div>
         <div class="items-container-bottom">
           <p>1x Croissant $2.45</p>
-          <p>Butter</p>
+          <p class="orange-text">Butter</p>
         </div>
       </div>
       <div class="name-container">
-        <p>NAME</p>
+        <p class="orange-text">NAME</p>
         <form>
           <label for="example" class="input-name">Name for order:</label><br />
           <input type="text" /><br />
         </form>
       </div>
       <div class="payment-container">
-        <p>PAYMENT</p>
+        <p class="orange-text">PAYMENT</p>
         <form>
           <label for="example" class="card-number">Card number</label><br />
           <input type="text" />
@@ -49,8 +58,8 @@
       </div>
       <p>Subtotal: $9.65</p>
       <p>Tax: $0.82</p>
-      <p>Total: $10.47</p>
-      <button class="place-order">Place Order</button>
+      <p class="bold">Total: $10.47</p>
+      <button class="place-order-btn">Place Order</button>
     </div>
   </body>
 </html>
