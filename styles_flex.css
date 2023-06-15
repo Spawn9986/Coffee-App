@@ -22,6 +22,10 @@ label {
   color: #946941;
 }
 
+.font-14 {
+  font-size: 14px;
+}
+
 .name,
 .payment {
   text-indent: 20px;
@@ -47,12 +51,13 @@ label {
   background-color: #eee1d5;
   width: 350px;
   margin: 20px 20px 20px 20px;
-  padding: 2px 10px 10px 25px;
+  padding: 2px 12px 10px 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .items-container-top {
   display: flex;
-  border-bottom: 1px solid #946a42;
+  border-bottom: 1.5px solid #ddb998;
 }
 
 .items-container-tl {
@@ -72,7 +77,7 @@ label {
 
 .items-container-middle {
   display: flex;
-  border-bottom: 1px solid #946a42;
+  border-bottom: 1.5px solid #ddb998;
 }
 
 .items-container-ml {
@@ -115,6 +120,7 @@ label {
   display: inline-block;
   margin: 20px 20px 20px 20px;
   padding-bottom: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .payment-container {
@@ -123,6 +129,7 @@ label {
   display: inline-block;
   margin: 20px 20px 20px 20px;
   padding-bottom: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .place-order-btn {
@@ -138,16 +145,20 @@ label {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 501;
 }
 
 .orange-text {
   color: #946a42;
 }
 
+.grey-text {
+  color: #746d54;
+}
+
 .name-label {
   background-color: #eee1d5;
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   left: 40px;
   top: 66px;
@@ -156,7 +167,7 @@ label {
 
 .card-num-label {
   background-color: #eee1d5;
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   left: 40px;
   top: 67px;
@@ -165,7 +176,7 @@ label {
 
 .ccv-num-label {
   background-color: #eee1d5;
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   left: 40px;
   top: 125px;
