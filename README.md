@@ -8,6 +8,10 @@
 
 <p id="description">Make a checkout page for a coffee app.</p>
 
+<h2>Project Screenshots:</h2>
+
+<img src="https://github.com/Spawn9986/Coffee-App/blob/main/Pics/Coffee-App.png" alt="project-screenshot" width="973" height="463/">
+
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
