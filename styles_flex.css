@@ -1,6 +1,5 @@
 * {
   font-family: "Open Sans", sans-serif;
-  margin: 0px;
 }
 
 .header-container {
@@ -14,14 +13,19 @@
 
 .main-app-container {
   background-color: #efefef;
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
+  padding: 8px;
+  border-radius: 100px;
   background-color: #eee1d5;
   border-color: #946941;
-  border-radius: 100px;
   border-width: 1.5px;
+  width: 85%;
+  margin: 0px 30px;
+  color: #776e51;
 }
 
 label {
@@ -29,17 +33,24 @@ label {
 }
 
 .items-container {
+  display: block;
   background-color: #eee1d5;
-  width: 50%;
+  width: 350px;
   margin: 20px 20px 20px 20px;
 }
 
 .name-container {
   background-color: #eee1d5;
+  position: relative;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
 }
 
 .payment-container {
   background-color: #eee1d5;
+  position: relative;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
 }
 
 .place-order-btn {
@@ -60,4 +71,59 @@ label {
 
 .orange-text {
   color: #946a42;
+}
+
+.name-label {
+  background-color: #eee1d5;
+  font-size: 13px;
+  position: absolute;
+  left: 25px;
+  top: 66px;
+  padding: 0 2px;
+}
+
+.card-num-label {
+  background-color: #eee1d5;
+  font-size: 13px;
+  position: absolute;
+  left: 25px;
+  top: 67px;
+  padding: 0 2px;
+}
+
+.ccv-num-label {
+  background-color: #eee1d5;
+  font-size: 13px;
+  position: absolute;
+  left: 25px;
+  top: 125px;
+  padding: 0 2px;
+}
+
+.top-main-body {
+  display: flex;
+  justify-content: center;
+  margin: 28px 2px;
+}
+
+.top-left-main-body {
+}
+
+.top-right-main-body {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.bottom-main-body {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-left-main-body {
+  margin: 0px 90px;
+}
+
+.bottom-right-main-body {
+  margin: 0px 90px;
 }

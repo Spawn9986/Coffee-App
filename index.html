@@ -22,43 +22,61 @@
       <p>Coffee Masters</p>
     </header>
     <div class="main-app-container">
-      <div class="items-container">
-        <p class="orange-text">ITEMS</p>
-        <div class="items-container-top">
-          <p>1x Cappuccino $3.35</p>
-          <p class="orange-text">Lite foam</p>
+      <div class="top-main-body">
+        <div class="top-left-main-body">
+          <div class="items-container">
+            <p class="orange-text">ITEMS</p>
+            <div class="items-container-top">
+              <p>1x Cappuccino $3.35</p>
+              <p class="orange-text">Lite foam</p>
+            </div>
+            <div class="items-container-middle">
+              <p>1x Cappuccino $3.85</p>
+              <p class="orange-text">Lite milk</p>
+              <p class="orange-text">Double expresso</p>
+            </div>
+            <div class="items-container-bottom">
+              <p>1x Croissant $2.45</p>
+              <p class="orange-text">Butter</p>
+            </div>
+          </div>
         </div>
-        <div class="items-container-middle">
-          <p>1x Cappuccino $3.85</p>
-          <p class="orange-text">Lite milk</p>
-          <p class="orange-text">Double expresso</p>
-        </div>
-        <div class="items-container-bottom">
-          <p>1x Croissant $2.45</p>
-          <p class="orange-text">Butter</p>
+        <div class="top-right-main-body">
+          <div class="name-container">
+            <p class="orange-text">NAME</p>
+            <form>
+              <label for="example" class="name-label">Name for order</label
+              ><br />
+              <input type="text" class="name-input" /><br />
+            </form>
+          </div>
+          <div class="payment-container">
+            <p class="orange-text">PAYMENT</p>
+            <form>
+              <label for="example" class="card-num-label">Card number</label
+              ><br />
+              <input type="text" class="card-num-input" />
+            </form>
+            <form>
+              <label for="example" class="ccv-num-label">CCV Number</label
+              ><br />
+              <input type="text" class="ccv-num-input" />
+            </form>
+          </div>
         </div>
       </div>
-      <div class="name-container">
-        <p class="orange-text">NAME</p>
-        <form>
-          <label for="example" class="input-name">Name for order:</label><br />
-          <input type="text" /><br />
-        </form>
+      <div class="bottom-main-body">
+        <div class="bottom-left-main-body">
+          <p>Subtotal:</p>
+          <p>Tax:</p>
+          <p class="bold">Total:</p>
+        </div>
+        <div class="bottom-right-main-body">
+          <p>$0.82</p>
+          <p>$9.65</p>
+          <p class="bold">$10.47</p>
+        </div>
       </div>
-      <div class="payment-container">
-        <p class="orange-text">PAYMENT</p>
-        <form>
-          <label for="example" class="card-number">Card number</label><br />
-          <input type="text" />
-        </form>
-        <form>
-          <label for="example" class="ccv-number">CCV Number</label><br />
-          <input type="text" />
-        </form>
-      </div>
-      <p>Subtotal: $9.65</p>
-      <p>Tax: $0.82</p>
-      <p class="bold">Total: $10.47</p>
       <button class="place-order-btn">Place Order</button>
     </div>
   </body>
