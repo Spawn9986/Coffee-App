@@ -6,8 +6,7 @@ input {
   padding: 8px;
   border-radius: 100px;
   background-color: #eee1d5;
-  border-color: #946941;
-  border-width: 1.5px;
+  border: 1.5px solid #946941;
   width: 92%;
   margin: 0px 10px;
   color: #776e51;
