@@ -1,10 +1,12 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #efefef;
   margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -17,42 +19,70 @@ nav {
 }
 
 .nav-img {
-  margin: 0px 5px;
+  position: relative;
+  right: 5px;
+}
+
+.main-page {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-areas:
+    "order payment"
+    "total total";
+  padding: 30px;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .box {
   background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.items-container {
+.order {
+  grid-area: order;
+}
+
+.payment {
+  grid-area: payment;
+}
+
+.total {
+  grid-area: total;
+}
+
+.items-box {
   width: 300px;
   height: 100px;
-  border: 1px solid green;
   margin: 10px;
 }
 
-.name-container {
+.name-box {
   width: 300px;
   height: 100px;
-  border: 1px solid orange;
   margin: 10px;
 }
 
-.payment-container {
+.payment-box {
   width: 300px;
   height: 100px;
-  border: 1px solid purple;
   margin: 10px;
 }
 
 .list {
+  grid-area: total;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 70px 70px;
   font-size: 23px;
-  border: 1px solid blue;
 }
 
 button {
