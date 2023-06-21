@@ -12,32 +12,53 @@
   </head>
   <body>
     <nav>
-      <img
-        class="nav-img"
-        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
-        alt="coffee mug"
-        width="36"
-        height="36"
-      />
-      <p>Coffee Masters</p>
+      <h1>
+        <img
+          class="nav-img"
+          src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+          alt="coffee mug"
+        />Coffee Masters
+      </h1>
     </nav>
     <div class="main-page">
       <section class="order">
-        <div class="items-box box">ITEMS</div>
+        <div class="items-box box">
+          <h2 class="box-title">ITEMS</h2>
+          <ul class="items">
+            <li class="item">
+              <div class="quantity">1x</div>
+              <div class="title">Cappucino</div>
+              <div class="price">$6.00</div>
+            </li>
+            <ul class="options">
+              <li>Light Foam</li>
+            </ul>
+            <li class="item">
+              <div class="quantity">1x</div>
+              <div class="title">Cappucino</div>
+              <div class="price">$7.90</div>
+            </li>
+            <ul class="options">
+              <li>Almond milk</li>
+              <li>Double Expresso Shot</li>
+            </ul>
+            <li class="item">
+              <div class="quantity">1x</div>
+              <div class="title">Croissant</div>
+              <div class="price">$5.37</div>
+            </li>
+            <ul class="options">
+              <li>Butter</li>
+            </ul>
+          </ul>
+        </div>
       </section>
       <section class="payment">
         <div class="name-box box">NAME</div>
         <div class="payment-box box">PAYMENT</div>
       </section>
       <section class="total">
-        <ul class="list">
-          <li>Subtotal:</li>
-          <li>Tax:</li>
-          <li class="bold">Total:</li>
-          <li>$9.65</li>
-          <li>$0.82</li>
-          <li class="bold">$10.47</li>
-        </ul>
+        <ul class="list"></ul>
       </section>
     </div>
     <button>Place Order</button>

@@ -21,28 +21,19 @@ nav {
 .nav-img {
   position: relative;
   right: 5px;
+  top: 10px;
+  width: 44px;
+  height: 44px;
 }
 
 .main-page {
   display: grid;
-  row-gap: 30px;
-  column-gap: 30px;
   grid-template-areas:
     "order payment"
     "total total";
-  padding: 30px;
-  margin: 0 auto;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
-}
-
-.box {
-  background-color: #eee1d5;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
-  padding: 15px;
-  margin-bottom: 20px;
-  width: 100%;
+  padding: 30px;
+  column-gap: 30px;
 }
 
 .order {
@@ -57,32 +48,62 @@ nav {
   grid-area: total;
 }
 
+.box-title {
+  color: #885a2d;
+}
+
+.box {
+  background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
 .items-box {
-  width: 300px;
-  height: 100px;
-  margin: 10px;
+}
+
+.item {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 8fr 3fr;
+  grid-template-areas:
+    "quantity title price"
+    "quantity options price";
+  padding: 10px 0;
+  border-bottom: 2px solid #ddb892;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.quantity {
+  grid-area: quantity;
+}
+
+.title {
+  grid-area: title;
+}
+
+.price {
+  grid-area: price;
+}
+
+.options {
+  list-style-type: none;
+  grid-area: options;
 }
 
 .name-box {
-  width: 300px;
-  height: 100px;
-  margin: 10px;
 }
 
 .payment-box {
-  width: 300px;
-  height: 100px;
-  margin: 10px;
 }
 
 .list {
   grid-area: total;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   list-style-type: none;
-  padding: 70px 70px;
-  font-size: 23px;
 }
 
 button {
