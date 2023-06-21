@@ -60,7 +60,8 @@ nav {
   margin-bottom: 20px;
 }
 
-.items-box {
+.items {
+  padding: 0;
 }
 
 .item {
@@ -71,11 +72,25 @@ nav {
     "quantity title price"
     "quantity options price";
   padding: 10px 0;
+  margin: 10px 0;
   border-bottom: 2px solid #ddb892;
+  row-gap: 10px;
+  width: 100%;
 }
 
 .item:last-child {
   border-bottom: none;
+}
+
+.options-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #b08968;
+}
+
+.options-item {
+  padding: 2px 0;
 }
 
 .quantity {
@@ -84,10 +99,12 @@ nav {
 
 .title {
   grid-area: title;
+  font-weight: bold;
 }
 
 .price {
   grid-area: price;
+  font-weight: bold;
 }
 
 .options {
