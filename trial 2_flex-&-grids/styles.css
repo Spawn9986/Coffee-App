@@ -2,8 +2,17 @@
   box-sizing: border-box;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.padding {
+  padding: 10px 0;
+}
+
 .box-title {
   color: #885a2d;
+  padding: 0;
 }
 
 .box {
@@ -11,7 +20,7 @@
   border-radius: 5px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 input {
@@ -129,15 +138,33 @@ nav {
   grid-area: options;
 }
 
-.name-box {
-}
-
-.payment-box {
-}
-
-.list {
+.total {
   grid-area: total;
+  margin: 0px auto;
+}
+
+.totals-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas:
+    "calculation cost"
+    "calculation cost"
+    "calculation cost";
   list-style-type: none;
+  justify-items: center;
+  padding: 0px;
+  margin: 40px 140px 0 140px;
+  column-gap: 300px;
+  row-gap: 15px;
+}
+
+.calculation {
+  grid-area: calculation;
+}
+
+.cost {
+  grid-area: cost;
 }
 
 button {
